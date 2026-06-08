@@ -4,8 +4,11 @@ import HeroSection from "@/components/home/HeroSection";
 import StatsBar from "@/components/home/StatsBar";
 
 export const metadata: Metadata = {
-  title: "Sustainabyte Technologies | AI-Powered Energy Optimization for Buildings & Industries",
-  description: "Sustainabyte Technologies helps industrial facilities and commercial buildings reduce energy costs and achieve Net Zero using AI-powered monitoring, chiller plant optimization, and verified savings.",
+  title: "Sustainabyte Technologies | AI Energy Management India",
+  description: "AI energy management India — Sustainabyte Technologies helps industrial facilities and commercial buildings reduce energy costs and achieve Net Zero using AI-powered monitoring, chiller plant optimization, and verified savings.",
+  alternates: {
+    canonical: "https://sustainabyte.ai",
+  },
 };
 
 const ProblemSolution = dynamic(() => import("@/components/home/ProblemSolution"));

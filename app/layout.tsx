@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/layout/Navbar";
 import ScrollProgressBar from "@/components/layout/ScrollProgressBar";
 import { Toaster } from "react-hot-toast";
+import JsonLd from "@/components/seo/JsonLd";
 
 const Footer = dynamic(() => import("@/components/layout/Footer"));
 
@@ -23,10 +24,14 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Sustainabyte Technologies | EPIC Energy Efficiency & Net Zero Solutions",
+  title: {
+    default: "Sustainabyte Technologies | AI Energy Management India",
+    template: "%s",
+  },
   description:
-    "Sustainabyte Technologies helps industrial facilities and commercial buildings monitor, control, and decarbonize energy usage using AI and IoT. Achieve verified savings and Net Zero alignment.",
+    "AI energy management India — Sustainabyte Technologies helps industrial facilities and commercial buildings monitor, control, and decarbonize energy usage using AI and IoT. Achieve verified savings and Net Zero alignment.",
   keywords: [
+    "AI energy management India",
     "energy efficiency",
     "sustainability",
     "net zero",
@@ -35,16 +40,68 @@ export const metadata: Metadata = {
     "IoT",
     "industrial energy",
     "commercial buildings",
+    "energy management software",
+    "energy audit India",
   ],
+  metadataBase: new URL("https://sustainabyte.ai"),
+  alternates: {
+    canonical: "https://sustainabyte.ai",
+  },
   openGraph: {
-    title: "Sustainabyte Technologies",
+    title: "Sustainabyte Technologies | AI Energy Management India",
     description:
-      "EPIC Facilities. Verified Savings. Net Zero Aligned.",
+      "AI-powered energy optimization for buildings & industries. EPIC Facilities. Verified Savings. Net Zero Aligned.",
     type: "website",
+    siteName: "Sustainabyte Technologies",
+    url: "https://sustainabyte.ai",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sustainabyte Technologies | AI Energy Management India",
+    description: "AI-powered energy optimization for buildings & industries.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: "/icon.png?v=1",
-  }
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Sustainabyte Technologies",
+  url: "https://sustainabyte.ai",
+  logo: "https://sustainabyte.ai/Company-Logo-3-1.webp",
+  description: "AI-powered energy optimization and sustainability solutions for buildings and industries in India.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Chennai",
+    addressRegion: "Tamil Nadu",
+    addressCountry: "IN",
+  },
+  sameAs: [],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Sustainabyte Technologies",
+  url: "https://sustainabyte.ai",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://sustainabyte.ai/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
 };
 
 export default function RootLayout({
@@ -55,6 +112,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sora.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>
+        <JsonLd data={organizationJsonLd} />
+        <JsonLd data={websiteJsonLd} />
         <Toaster position="top-right" reverseOrder={false} />
         <ScrollProgressBar />
         <Navbar />

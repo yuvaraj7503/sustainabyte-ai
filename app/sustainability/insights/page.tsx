@@ -56,7 +56,7 @@ export default function InsightsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/blogs/Untitled-design.webp"
-            alt="Sustainability Insights Background"
+            alt="Sustainability insights and environmental data analytics - Sustainabyte Technologies"
             fill
             className="object-cover"
             priority
@@ -155,7 +155,7 @@ export default function InsightsPage() {
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         sizes="(max-width: 768px) 100vw, 400px"
-                      />
+                       loading="lazy" />
                     </div>
 
                     {/* Content */}

@@ -97,7 +97,7 @@ export default function DigiWeldPage() {
           <div className="absolute inset-0 bg-[#0D1B3E]/60 z-10" />
           <Image
             src="/technology/digiweld/digiwelbg.webp"
-            alt="DigiWeld Hero"
+            alt="DigiWeld welding process digitization platform - Sustainabyte Technologies"
             fill
             className="object-cover object-center opacity-80 brightness-75"
             priority
@@ -223,7 +223,7 @@ export default function DigiWeldPage() {
                       alt={`DigiWeld Dashboard ${activeImage + 1}`}
                       fill
                       className="object-contain"
-                    />
+                     loading="lazy" />
                   </motion.div>
                 </AnimatePresence>
 
@@ -325,11 +325,11 @@ export default function DigiWeldPage() {
               <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.12)] border-[12px] border-white bg-white">
                 <Image
                   src="/technology/digiweld/dashboard.webp"
-                  alt="DigiWeld Production Intelligence"
+                  alt="DigiWeld production intelligence dashboard for welding analytics - Sustainabyte"
                   width={800}
                   height={600}
                   className="w-full h-auto object-contain"
-                />
+                 loading="lazy" />
               </div>
             </motion.div>
           </div>

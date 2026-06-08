@@ -106,7 +106,7 @@ export default function ChillerPlantManagerPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/technology/Energy analysis  bg.webp"
-            alt="Chiller Plant Manager background"
+            alt="Chiller plant optimization and management system - Sustainabyte Technologies"
             fill
             className="object-cover opacity-20 brightness-50"
             priority

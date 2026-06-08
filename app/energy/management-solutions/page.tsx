@@ -5,16 +5,23 @@ import { CheckCircle2, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import GreenButton from "@/components/ui/GreenButton";
+import RelatedServices from "@/components/seo/RelatedServices";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 export default function EnergyManagementSolutionsPage() {
   return (
     <div className="bg-[#0D1B3E] min-h-screen text-white overflow-x-hidden">
+      <Breadcrumbs items={[
+        { name: "Home", href: "/" },
+        { name: "Energy", href: "/energy" },
+        { name: "Management Solutions", href: "/energy/management-solutions" },
+      ]} />
       {/* Premium Hero Section */}
       <section className="relative pt-40 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/energy/Energy Management Solutions/Energy-Management-Solutions-BG.webp"
-            alt="Energy Management Solutions"
+            alt="Energy management software India - ISO 50001 implementation by Sustainabyte"
             fill
             className="object-cover opacity-100"
             priority
@@ -41,7 +48,7 @@ export default function EnergyManagementSolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-[family-name:var(--font-sora)] text-3xl md:text-5xl font-black text-[#0D1B3E] mb-5">Our <span className="bg-gradient-to-r from-[#4DB846] to-[#3DD68C] bg-clip-text text-transparent">Expertise</span></h2>
-            <p className="text-gray-500 text-base max-w-2xl mx-auto">Comprehensive frameworks and digital solutions to manage and optimize your energy performance.</p>
+            <p className="text-gray-500 text-base max-w-2xl mx-auto">Energy management software India — comprehensive frameworks and digital solutions to manage, measure, and optimize your energy performance across facilities.</p>
             <div className="w-20 h-1.5 bg-[#4DB846] mx-auto mt-6 rounded-full" />
           </div>
 
@@ -150,7 +157,7 @@ export default function EnergyManagementSolutionsPage() {
                         fill
                         sizes="(max-width: 768px) 100vw, 420px"
                         className="object-cover object-center group-hover/img:scale-105 transition-transform duration-700"
-                      />
+                       loading="lazy" />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1B3E]/70 to-transparent px-6 py-4">
                         <span className="text-[#4DB846] text-[10px] font-bold tracking-widest uppercase">{feature.subtitle}</span>
                       </div>
@@ -199,7 +206,7 @@ export default function EnergyManagementSolutionsPage() {
                   alt={pillar.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700 brightness-[0.7] group-hover:brightness-[0.8]"
-                />
+                 loading="lazy" />
                 <div className="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-[#0D1B3E] via-transparent to-transparent">
                   <span className="text-[#4DB846] text-sm font-bold tracking-widest uppercase mb-2">{pillar.label}</span>
                   <h3 className="text-3xl font-black text-white mb-3 group-hover:text-[#4DB846] transition-colors">{pillar.title}</h3>
@@ -237,6 +244,12 @@ export default function EnergyManagementSolutionsPage() {
           </motion.div>
         </div>
       </section>
+
+      <RelatedServices services={[
+        { title: "Energy Efficiency Consulting", href: "/energy/efficiency-consulting", description: "ASHRAE audits, chiller performance analysis, and power quality assessments." },
+        { title: "Energy Analytics", href: "/energy/analytics", description: "Utility, BMS, and solar data analytics to identify inefficiencies and optimize operations." },
+        { title: "Net Zero Roadmap", href: "/sustainability/net-zero-roadmap", description: "Data-backed path to carbon neutrality with science-aligned actions and performance monitoring." },
+      ]} />
     </div>
   );
 }

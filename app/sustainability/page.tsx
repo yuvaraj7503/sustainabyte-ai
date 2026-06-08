@@ -25,7 +25,7 @@ export default function SustainabilityPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/What We Do all img/bgimg.webp"
-            alt="Sustainability Solutions"
+            alt="Sustainability solutions for carbon reduction and net zero India - Sustainabyte"
             fill
             className="object-cover opacity-40"
             priority

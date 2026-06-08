@@ -147,7 +147,7 @@ export default function IoTSolutionsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/iot/hero-bg.png"
-            alt="IoT Solutions Background"
+            alt="IoT energy monitoring solutions with smart sensors - Sustainabyte Technologies"
             fill
             className="object-cover object-center opacity-30"
             priority
@@ -284,7 +284,7 @@ export default function IoTSolutionsPage() {
                     alt={product.name}
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  />
+                   loading="lazy" />
                   {/* Gradient fade into card body */}
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0D1B3E]/90" />
 

@@ -137,7 +137,7 @@ export default function RegionsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/Regions/2b earth.webp"
-            alt="Regions Background"
+            alt="Energy management solutions across India - regional operations map"
             fill
             className="object-cover"
             priority
@@ -237,10 +237,10 @@ export default function RegionsPage() {
               <div className="w-16 h-16 relative mb-8 rounded-full overflow-hidden border-2 border-[#3DD68C]/20 group-hover:border-[#3DD68C]/50 transition-colors shadow-lg mx-auto">
                 <Image
                   src="/Regions/2b earth.webp"
-                  alt="Global Commitment"
+                  alt="Sustainabyte global energy management commitment - India operations"
                   fill
                   className="object-cover scale-150 group-hover:scale-125 transition-transform duration-700"
-                />
+                 loading="lazy" />
               </div>
               <h3 className="font-sora text-3xl font-bold mb-6 text-[#0D1B3E]">Global Commitment</h3>
               <p className="text-gray-600 leading-relaxed text-lg">

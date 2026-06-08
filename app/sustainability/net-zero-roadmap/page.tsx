@@ -20,6 +20,9 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import GreenButton from "@/components/ui/GreenButton";
+import NetZeroFAQ from "@/components/seo/NetZeroFAQ";
+import RelatedServices from "@/components/seo/RelatedServices";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const sections = [
   {
@@ -103,12 +106,17 @@ const sections = [
 export default function NetZeroRoadmapPage() {
   return (
     <div className="bg-[#0D1B3E] min-h-screen text-white overflow-x-hidden">
+      <Breadcrumbs items={[
+        { name: "Home", href: "/" },
+        { name: "Sustainability", href: "/sustainability" },
+        { name: "Net Zero Roadmap", href: "/sustainability/net-zero-roadmap" },
+      ]} />
       {/* Premium Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/sustanaibility/NET ZERO Roadmap bg.webp"
-            alt="Net Zero Roadmap Background"
+            alt="Net zero roadmap India - data-backed carbon neutrality path by Sustainabyte"
             fill
             className="object-cover opacity-60"
             priority
@@ -200,6 +208,14 @@ export default function NetZeroRoadmapPage() {
           </div>
         </div>
       </section>
+
+      <NetZeroFAQ />
+
+      <RelatedServices services={[
+        { title: "Decarbonization", href: "/sustainability/decarbonization", description: "Target assets, measure results, and achieve emission reductions with data-driven decarbonization services." },
+        { title: "Carbon Accounting", href: "/sustainability/carbon-accounting", description: "GHG emissions tracking, ISO 14064 compliance, and CDP reporting made measurable and actionable." },
+        { title: "Energy Management Solutions", href: "/energy/management-solutions", description: "ISO 50001 implementation, ISO 50002 audits, and IPMVP measurement & verification." },
+      ]} />
 
       {/* CTA Section */}
       <section className="py-24 bg-[#0D1B3E] relative overflow-hidden">

@@ -163,7 +163,7 @@ export default function OptiBytePage() {
             >
               <Image
                 src={bgImages[currentBg]}
-                alt="OptiByte Background"
+                alt="OptiByte AI energy intelligence platform interface - Sustainabyte"
                 fill
                 className="object-cover scale-110"
                 priority
@@ -216,10 +216,10 @@ export default function OptiBytePage() {
             >
               <Image
                 src="/technology/optibyteui.webp"
-                alt="OptiByte Architecture Diagram"
+                alt="OptiByte system architecture diagram showing AI analytics pipeline - Sustainabyte"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
+               loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0D1B3E]/5 via-transparent to-transparent pointer-events-none" />
             </motion.div>
 
@@ -284,11 +284,11 @@ export default function OptiBytePage() {
             <div className="rounded-[2.5rem] overflow-hidden border border-white/20">
               <Image
                 src="/technology/fullimg.webp"
-                alt="Full Platform Interface"
+                alt="OptiByte full platform interface for energy analytics and optimization - Sustainabyte"
                 width={1920}
                 height={1080}
                 className="w-full h-auto"
-              />
+               loading="lazy" />
             </div>
           </motion.div>
         </div>
@@ -426,7 +426,7 @@ function EquipmentCard({ eq, index }: { eq: any, index: number }) {
             alt={eq.name}
             fill
             className="object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
-          />
+           loading="lazy" />
         </div>
       )}
       <h4 className="text-2xl font-black text-[#0D1B3E] mb-6 group-hover:text-[#3DD68C] transition-colors">{eq.name}</h4>
@@ -482,7 +482,7 @@ function FlipEquipmentCard({ eq, index }: { eq: any, index: number }) {
                 alt={eq.name}
                 fill
                 className="object-cover"
-              />
+               loading="lazy" />
               <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-[#0D1B3E] via-[#0D1B3E]/80 to-transparent">
                 <h4 className="text-xl font-black text-white">{eq.name}</h4>
                 <p className="text-[#3DD68C] text-sm font-bold mt-1">OptiByte Monitored</p>

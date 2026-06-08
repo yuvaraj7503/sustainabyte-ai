@@ -94,7 +94,7 @@ export default function FusionBytePage() {
           <div className="absolute inset-0 bg-[#0D1B3E]/60 z-10" />
           <Image
             src="/technology/FusionByte/Fusionbyte-BG-2-1-scaled.webp"
-            alt="FusionByte Hero"
+            alt="FusionByte unified data platform for energy management - Sustainabyte"
             fill
             className="object-cover object-center opacity-80 brightness-75"
             priority
@@ -180,7 +180,7 @@ export default function FusionBytePage() {
                       width={80}
                       height={80}
                       className="object-contain"
-                    />
+                     loading="lazy" />
                   </div>
                   <h3 className="text-2xl font-black text-[#0D1B3E] leading-[1.2] mb-6 group-hover:text-[#4DB846] transition-all">
                     {item.title}
@@ -224,7 +224,7 @@ export default function FusionBytePage() {
                       alt={`FusionByte Dashboard ${activeImage + 1}`}
                       fill
                       className="object-contain"
-                    />
+                     loading="lazy" />
                   </motion.div>
                 </AnimatePresence>
 

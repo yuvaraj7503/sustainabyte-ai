@@ -43,7 +43,7 @@ export default function NewsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/News/background.jpg"
-            alt="News Background"
+            alt="Sustainabyte Technologies latest news and updates on energy management"
             fill
             className="object-cover"
             priority
@@ -133,7 +133,7 @@ export default function NewsPage() {
                     fill
                     className="object-contain group-hover:scale-105 transition-transform duration-700 ease-out"
                     sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+                   loading="lazy" />
                 </div>
 
                 {/* Meta */}

@@ -38,7 +38,7 @@ export default function CompanyPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/about/About-Us-BG-1-scaled.webp"
-            alt="Making Sustainability measurable and manageable"
+            alt="Making sustainability measurable and manageable - Sustainabyte Technologies mission"
             fill
             className="object-cover"
             priority
@@ -85,7 +85,7 @@ export default function CompanyPage() {
               </p>
             </div>
             <div className="w-32 h-32 md:w-40 md:h-40 relative flex-shrink-0">
-              <Image src="/about/Mission.svg" alt="Mission Handshake" fill className="object-contain" />
+              <Image src="/about/Mission.svg" alt="Sustainabyte mission - AI-driven energy optimization partnership" fill className="object-contain"  loading="lazy" />
             </div>
           </motion.div>
 
@@ -97,7 +97,7 @@ export default function CompanyPage() {
             className="flex flex-col md:flex-row items-center justify-between gap-12"
           >
             <div className="w-32 h-32 md:w-40 md:h-40 relative flex-shrink-0">
-              <Image src="/about/Vision.svg" alt="Vision Lightbulb" fill className="object-contain" />
+              <Image src="/about/Vision.svg" alt="Sustainabyte vision - innovative energy intelligence for India" fill className="object-contain"  loading="lazy" />
             </div>
             <div className="flex-1 text-center md:text-right">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0D1B3E] mb-6 border-b-2 border-[#3DA45C] pb-2 inline-block">
@@ -169,7 +169,7 @@ export default function CompanyPage() {
             </div>
             <div className="flex-1 w-full">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-4 border-[#3DA45C] shadow-xl">
-                <Image src="/about/Energy-768x432.webp" alt="Energy" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+                <Image src="/about/Energy-768x432.webp" alt="Energy management services - Sustainabyte industrial solutions" fill className="object-cover hover:scale-105 transition-transform duration-700"  loading="lazy" />
               </div>
             </div>
           </motion.div>
@@ -178,7 +178,7 @@ export default function CompanyPage() {
           <motion.div id="sustainability" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col-reverse md:flex-row items-center gap-12">
             <div className="flex-1 w-full">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-4 border-[#3DA45C] shadow-xl">
-                <Image src="/about/Sustainability-768x432.webp" alt="Sustainability" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+                <Image src="/about/Sustainability-768x432.webp" alt="Sustainability consulting and carbon accounting - Sustainabyte Technologies" fill className="object-cover hover:scale-105 transition-transform duration-700"  loading="lazy" />
               </div>
             </div>
             <div className="flex-1 text-center md:text-left">
@@ -217,7 +217,7 @@ export default function CompanyPage() {
             </div>
             <div className="flex-1 w-full">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-4 border-[#3DA45C] shadow-xl">
-                <Image src="/about/Technology-768x432.webp" alt="Technology" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+                <Image src="/about/Technology-768x432.webp" alt="AI and IoT technology platform for energy optimization - Sustainabyte" fill className="object-cover hover:scale-105 transition-transform duration-700"  loading="lazy" />
               </div>
             </div>
           </motion.div>
@@ -237,7 +237,7 @@ export default function CompanyPage() {
             <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
               {partners.map((partner, idx) => (
                 <div key={idx} className="relative h-16 w-32 md:h-20 md:w-40 hover:scale-105 transition-transform duration-300">
-                  <Image src={partner.src} alt={partner.name} fill className="object-contain" />
+                  <Image src={partner.src} alt={partner.name} fill className="object-contain"  loading="lazy" />
                 </div>
               ))}
             </div>
@@ -252,7 +252,7 @@ export default function CompanyPage() {
               <div className="flex w-max animate-marquee space-x-12 md:space-x-20 items-center py-4">
                 {[...clients, ...clients].map((src, idx) => (
                   <div key={idx} className="relative h-16 w-32 md:h-24 md:w-40 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-                    <Image src={src} alt="Client Logo" fill className="object-contain" />
+                    <Image src={src} alt="Sustainabyte trusted client partner logo" fill className="object-contain"  loading="lazy" />
                   </div>
                 ))}
               </div>

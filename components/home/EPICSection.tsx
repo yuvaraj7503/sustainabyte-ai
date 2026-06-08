@@ -63,7 +63,7 @@ function CommitmentRow({
               fill
               className="object-contain p-4"
               sizes="(max-width: 768px) 100vw, 50vw"
-            />
+             loading="lazy" />
           </div>
         </motion.div>
       </div>

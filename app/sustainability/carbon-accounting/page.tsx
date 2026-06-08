@@ -150,7 +150,7 @@ export default function CarbonAccountingPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/sustanaibility/Carbon Accounting/Decarbonizationbg1.webp"
-            alt="Carbon Accounting"
+            alt="Carbon accounting and GHG emissions tracking platform - Sustainabyte Technologies"
             fill
             className="object-cover opacity-70"
             priority
@@ -202,7 +202,7 @@ export default function CarbonAccountingPage() {
               transition={{ delay: idx * 0.2 }}
             >
               <Link href={item.href} className="group relative aspect-[16/10] rounded-[2.5rem] overflow-hidden border-4 border-[#4DB846] shadow-xl hover:shadow-[0_20px_60px_rgba(77,184,70,0.3)] transition-all duration-500 block">
-                <Image src={item.img} alt={item.title} fill className="object-cover group-hover:scale-110 transition-transform duration-1000 brightness-[0.4]" />
+                <Image src={item.img} alt={item.title} fill className="object-cover group-hover:scale-110 transition-transform duration-1000 brightness-[0.4]"  loading="lazy" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 z-10">
                   <h3 className="text-3xl font-black text-[#4DB846] mb-2 group-hover:scale-105 transition-transform">{item.title}</h3>
                   <p className="text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-2 group-hover:translate-y-0">{item.desc}</p>
@@ -332,7 +332,7 @@ export default function CarbonAccountingPage() {
       {/* 3. ISO 14064 Section (Grid with Dark BG) */}
       <section id="iso14064" className="py-24 bg-[#0D1B3E] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 z-0">
-          <Image src="/sustanaibility/Carbon Accounting/ISO-14064.webp" alt="ISO Pattern" fill className="object-cover" />
+          <Image src="/sustanaibility/Carbon Accounting/ISO-14064.webp" alt="ISO 14064 carbon accounting standards compliance - Sustainabyte" fill className="object-cover"  loading="lazy" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">

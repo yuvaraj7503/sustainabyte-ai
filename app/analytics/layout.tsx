@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Data Analytics | Utility, BMS & Solar Analytics | Sustainabyte",
-  description: "Unlock data-driven energy performance with Sustainabyte's utility, BMS, and solar analytics. Identify inefficiencies, optimize operations, and reduce costs.",
+  title: "Energy Analytics Platform | Utility, BMS & Solar Data Insights | Sustainabyte",
+  description: "Sustainabyte's energy analytics platform delivers utility, BMS, and solar data insights. Identify consumption patterns, detect faults, and reduce energy costs with data-driven analytics.",
+  alternates: {
+    canonical: "https://sustainabyte.ai/analytics",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+    </>
+  );
 }

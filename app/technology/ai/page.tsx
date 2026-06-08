@@ -20,6 +20,8 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import GreenButton from "@/components/ui/GreenButton";
+import RelatedServices from "@/components/seo/RelatedServices";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const aiCapabilities = [
   {
@@ -129,6 +131,11 @@ const aiModules = [
 export default function AIPage() {
   return (
     <div className="bg-[#0D1B3E] min-h-screen text-white overflow-x-hidden font-[family-name:var(--font-sora)]">
+      <Breadcrumbs items={[
+        { name: "Home", href: "/" },
+        { name: "Technology", href: "/technology" },
+        { name: "AI & Machine Learning", href: "/technology/ai" },
+      ]} />
       <style>{`
         @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
         .float-anim { animation: float 7s ease-in-out infinite; }
@@ -159,7 +166,7 @@ export default function AIPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/ai/ai 1.png"
-            alt="AI Technology Background"
+            alt="AI IoT energy optimization technology - machine learning for smart buildings"
             fill
             className="object-cover opacity-30"
             priority
@@ -206,15 +213,15 @@ export default function AIPage() {
 
               <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }}
                 className="text-4xl md:text-7xl lg:text-8xl font-black leading-[1.0] mb-8 tracking-tight">
-                Intelligence<br />
+                AI &amp; Machine Learning<br />
                 <span style={{ background: "linear-gradient(135deg, #3DD68C 0%, #4DB846 50%, #3DD68C 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-                  Built In.
+                  for Smart Energy Management
                 </span>
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }}
                 className="text-lg md:text-xl text-gray-300 max-w-2xl mb-12 leading-relaxed">
-                Sustainabyte embeds AI at every layer — from sensor data ingestion to autonomous optimisation — so your facilities run smarter without adding complexity.
+                AI IoT energy optimization at every layer — Sustainabyte embeds intelligence from sensor data ingestion to autonomous optimisation, so your facilities run smarter without adding complexity.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }}
@@ -311,7 +318,7 @@ export default function AIPage() {
                       width={800}
                       height={600}
                       className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                    />
+                     loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
                   </div>
                 </div>
@@ -565,6 +572,12 @@ export default function AIPage() {
           </motion.div>
         </div>
       </section>
+
+      <RelatedServices services={[
+        { title: "OptiByte Platform", href: "/technology/optibyte", description: "AI Energy Intelligence Platform — analytics, diagnostics, and intelligent optimization for your entire facility portfolio." },
+        { title: "IoT Solutions", href: "/technology/iot-solutions", description: "Optiedge IoT platform with six smart solutions for water, AC, data monitoring, and chiller plant management." },
+        { title: "Energy Efficiency Consulting", href: "/energy/efficiency-consulting", description: "ASHRAE audits, chiller performance analysis, and equipment optimization services." },
+      ]} />
     </div>
   );
 }
