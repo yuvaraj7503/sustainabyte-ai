@@ -108,7 +108,7 @@ export default function PeoplePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/people/bgimg.png"
-            alt="People background"
+            alt="Sustainabyte team of energy management professionals India"
             fill
             className="object-cover object-center opacity-55"
             priority
@@ -174,7 +174,7 @@ export default function PeoplePage() {
                       alt={member.name}
                       fill
                       className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    />
+                     loading="lazy" />
                   ) : (
                     /* Placeholder avatar */
                     <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
@@ -245,7 +245,7 @@ export default function PeoplePage() {
                     alt={selectedMember.name}
                     fill
                     className="object-cover object-top"
-                  />
+                   loading="lazy" />
                 ) : (
                   /* Placeholder avatar */
                   <div className="absolute inset-0 flex items-center justify-center">

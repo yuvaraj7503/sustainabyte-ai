@@ -10,10 +10,10 @@ export default function TopCTA() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/energy/energy-banner.webp"
-          alt="Industrial Background"
+          alt="Industrial energy facility exterior - Sustainabyte Technologies"
           fill
           className="object-cover"
-        />
+         loading="lazy" />
         <div className="absolute inset-0 bg-[#0D1B3E]/85 mix-blend-multiply" />
         <div className="absolute inset-0 mesh-gradient opacity-20" />
       </div>

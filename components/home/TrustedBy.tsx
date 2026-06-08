@@ -71,7 +71,7 @@ export default function TrustedBy() {
                   fill
                   className="object-contain transition-transform duration-400 p-3 group-hover:scale-105"
                   sizes="176px"
-                />
+                 loading="lazy" />
               </div>
             </div>
           ))}

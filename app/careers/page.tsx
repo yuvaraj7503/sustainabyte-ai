@@ -156,7 +156,7 @@ export default function CareersPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/Careers/career .webp"
-            alt="Careers Background"
+            alt="Career opportunities at Sustainabyte Technologies India"
             fill
             className="object-cover"
             priority
@@ -308,10 +308,10 @@ export default function CareersPage() {
           >
             <Image
               src="/Careers/teams.avif"
-              alt="Sustainabyte Team"
+              alt="Sustainabyte Technologies team culture and workplace India"
               fill
               className="object-cover"
-            />
+             loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-tr from-[#3DD68C]/10 to-transparent" />
           </motion.div>
           <motion.div
@@ -367,10 +367,10 @@ export default function CareersPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/Careers/career .webp"
-            alt="Apply Background"
+            alt="Join Sustainabyte Technologies - apply for energy management careers"
             fill
             className="object-cover"
-          />
+           loading="lazy" />
           <div className="absolute inset-0 bg-gray-800/80 backdrop-blur-[2px]" />
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">

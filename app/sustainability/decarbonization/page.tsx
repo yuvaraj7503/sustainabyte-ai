@@ -28,7 +28,7 @@ export default function DecarbonizationPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/sustanaibility/Decarbonization/Decarbonizationbg.webp"
-            alt="Decarbonization Background"
+            alt="Industrial decarbonization strategy and emission reduction - Sustainabyte"
             fill
             className="object-cover opacity-60"
             priority
@@ -173,7 +173,7 @@ export default function DecarbonizationPage() {
                   whileHover={{ y: i % 2 === 0 ? -10 : 10 }}
                   className="aspect-[3/5] relative rounded-[2.5rem] overflow-hidden border-2 border-[#4DB846] shadow-xl"
                 >
-                  <Image src={item.src} alt="Target Asset" fill className="object-cover" />
+                  <Image src={item.src} alt="Decarbonization target asset identification - Sustainabyte Technologies" fill className="object-cover"  loading="lazy" />
                 </motion.div>
               ))}
             </div>
@@ -244,7 +244,7 @@ export default function DecarbonizationPage() {
                   whileHover={{ y: i % 2 === 0 ? -10 : 10 }}
                   className="aspect-[3/5] relative rounded-[2.5rem] overflow-hidden border-2 border-[#4DB846] shadow-xl"
                 >
-                  <Image src={item.src} alt="Measurable Result" fill className="object-cover" />
+                  <Image src={item.src} alt="Measurable decarbonization results and verified emission reduction - Sustainabyte" fill className="object-cover"  loading="lazy" />
                 </motion.div>
               ))}
             </div>
@@ -307,7 +307,7 @@ export default function DecarbonizationPage() {
                   whileHover={{ y: i % 2 === 0 ? -10 : 10 }}
                   className="aspect-[3/5] relative rounded-[2.5rem] overflow-hidden border-2 border-[#4DB846] shadow-xl"
                 >
-                  <Image src={item.src} alt="Immediate Impact" fill className="object-cover" />
+                  <Image src={item.src} alt="Immediate carbon reduction impact through targeted interventions - Sustainabyte" fill className="object-cover"  loading="lazy" />
                 </motion.div>
               ))}
             </div>

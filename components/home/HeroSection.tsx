@@ -114,7 +114,7 @@ export default function HeroSection() {
             >
               AI-Powered{" "}
               <span className="bg-gradient-to-r from-[#3DD68C] to-[#00FFAA] bg-clip-text text-transparent">
-                Energy Optimization
+                Energy Intelligence
               </span>
               <br />
               for Buildings & Industries
@@ -126,7 +126,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-[#B0BEC5] text-base sm:text-lg md:text-xl max-w-xl mb-8 sm:mb-10 leading-relaxed"
             >
-              Sustainabyte helps commercial buildings, factories, and campuses reduce HVAC and utility energy costs through AIoT monitoring, chiller plant optimization, energy audits, and verified savings.
+              Leading AI energy management in India — Sustainabyte helps commercial buildings, factories, and campuses reduce HVAC and utility energy costs through AIoT monitoring, chiller plant optimization, energy audits, and verified savings.
             </motion.p>
 
             <motion.div

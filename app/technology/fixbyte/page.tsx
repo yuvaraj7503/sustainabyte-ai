@@ -96,7 +96,7 @@ export default function FixBytePage() {
           <div className="absolute inset-0 bg-[#0D1B3E]/60 z-10" />
           <Image
             src="/technology/fixbyte/Fixbyte-BG-3-scaled.webp"
-            alt="FixByte Hero"
+            alt="FixByte facility maintenance management platform - Sustainabyte Technologies"
             fill
             className="object-cover object-center opacity-80 brightness-75"
             priority
@@ -179,7 +179,7 @@ export default function FixBytePage() {
                         width={80}
                         height={80}
                         className="group-hover:scale-110 transition-transform duration-300"
-                      />
+                       loading="lazy" />
                     </div>
                     <h3 className="text-2xl font-black text-[#0D1B3E] leading-tight group-hover:text-[#4DB846] transition-colors">
                       {feature.title}
@@ -199,11 +199,11 @@ export default function FixBytePage() {
               <div className="relative">
                 <Image
                   src="/technology/fixbyte/mobile view.webp"
-                  alt="FixByte Mobile Interface"
+                  alt="FixByte mobile app for facility maintenance tracking - Sustainabyte"
                   width={800}
                   height={1000}
                   className="w-full h-auto float-anim"
-                />
+                 loading="lazy" />
               </div>
             </motion.div>
           </div>
@@ -276,11 +276,11 @@ export default function FixBytePage() {
               <div className="relative rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl">
                 <Image
                   src="/technology/fixbyte/mobile apps.webp"
-                  alt="FixByte Mobile Apps"
+                  alt="FixByte mobile applications for on-site maintenance teams - Sustainabyte"
                   width={600}
                   height={800}
                   className="w-full h-auto object-contain"
-                />
+                 loading="lazy" />
               </div>
             </motion.div>
           </div>
@@ -401,7 +401,7 @@ export default function FixBytePage() {
                       alt={carouselItems[currentSlide].title}
                       fill
                       className="object-contain drop-shadow-[0_30px_100px_rgba(0,0,0,0.15)]"
-                    />
+                     loading="lazy" />
                   </motion.div>
                 </div>
 

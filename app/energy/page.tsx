@@ -43,7 +43,7 @@ export default function EnergyPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/energy/Energy Efficiency and Consulting/energybg.webp"
-            alt="Energy Excellence"
+            alt="Energy excellence solutions for buildings and industries - Sustainabyte"
             fill
             className="object-cover opacity-80"
             priority
@@ -327,7 +327,7 @@ export default function EnergyPage() {
                         width={1024}
                         height={1024}
                         className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                      />
+                       loading="lazy" />
                     </div>
                   </div>
                 </motion.div>

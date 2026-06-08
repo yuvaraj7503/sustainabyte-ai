@@ -3,55 +3,67 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, X } from "lucide-react";
+import Script from "next/script";
 
 const faqs = [
   {
-    q: "1. Who is Sustainabyte?",
-    a: "Sustainabyte is a data-driven energy and sustainability solutions company helping organizations cut emissions, improve efficiency, and progress toward Net Zero through expert consulting and digital platforms.",
+    q: "What is AI-powered energy management?",
+    a: "AI-powered energy management uses artificial intelligence and IoT sensors to continuously monitor, analyse, and optimise energy consumption in buildings and industrial facilities. Sustainabyte's platform combines predictive intelligence, digital twins, and autonomous control to deliver verified energy savings of up to 30% without manual intervention.",
   },
   {
-    q: "2. Which industries do you serve?",
-    a: "We support commercial buildings, industries, hospitals, retail spaces and educational campuses, delivering energy efficiency, sustainability consulting, and decarbonization solutions customized for every sector.",
+    q: "How much energy savings can I expect with Sustainabyte?",
+    a: "Our clients typically achieve 15-30% energy savings depending on facility type and current efficiency levels. Savings are verified through IPMVP-based Measurement & Verification, providing audit-ready documentation and bankable results for stakeholders.",
   },
   {
-    q: "3. How do your solutions integrate with existing systems?",
-    a: "Our platforms are OEM-agnostic and connect through standard protocols such as Modbus, BACnet, and MQTT.",
+    q: "Which industries does Sustainabyte serve?",
+    a: "We support commercial buildings, industries, hospitals, retail spaces, educational campuses, and data centres. Our solutions are customised for every sector, delivering energy efficiency consulting, sustainability services, and AI-powered decarbonization solutions.",
   },
   {
-    q: "4. Do you provide verified energy-savings reports?",
-    a: "Yes, we validate savings using IPMVP-based Measurement & Verification and provide audit-ready documentation.",
+    q: "Is Sustainabyte available across India?",
+    a: "Yes. Headquartered in Chennai, Tamil Nadu, Sustainabyte serves clients across India, the Middle East, and is expanding globally. Our cloud-based platforms enable remote monitoring and management of facilities nationwide.",
   },
   {
-    q: "5. Can we start with a single facility and scale later?",
-    a: "Absolutely. Our modular architecture allows clients to start with one facility and expand to multiple sites with centralized dashboards for portfolio-wide tracking.",
+    q: "How do your solutions integrate with existing systems?",
+    a: "Our platforms are OEM-agnostic and connect through standard protocols such as Modbus, BACnet, MQTT, and OPC-UA. This means we work with your existing BMS, chillers, and utility infrastructure without requiring equipment replacement.",
   },
   {
-    q: "6. Do you support government or compliance audits?",
-    a: "Yes. Our audits comply with ISO 50001, 50002, 14064 and ASHRAE ensuring complete energy and sustainability compliance.",
+    q: "Do you provide verified energy-savings reports?",
+    a: "Yes, we validate savings using IPMVP-based Measurement & Verification and provide audit-ready documentation. Our AI-powered M&V tracks, attributes, and reports every kilowatt saved.",
   },
   {
-    q: "7. Is your technology cloud-based?",
-    a: "OptiByte and related platforms support both on-premises and secure cloud deployments.",
+    q: "Do you support government or compliance audits?",
+    a: "Yes. Our audits comply with ISO 50001, ISO 50002, ISO 14064, and ASHRAE standards, ensuring complete energy and sustainability compliance for regulatory requirements.",
   },
   {
-    q: "8. Do you offer post-project support or training?",
-    a: "Yes, we provide continuous monitoring, periodic reviews, and staff training.",
-  },
-  {
-    q: "9. What regions do you currently operate in?",
-    a: "Headquartered in Chennai, serving India, Middle East and expanding globally soon.",
-  },
-  {
-    q: "10. How can I contact your team?",
-    a: "Through the form on our Contact Us page or directly at info@sustainabyte.ai",
+    q: "Can we start with a single facility and scale later?",
+    a: "Absolutely. Our modular architecture allows clients to start with one facility and expand to multiple sites with centralised dashboards for portfolio-wide tracking and reporting.",
   },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="py-16 sm:py-24 bg-white">
+      <Script
+        id="faq-jsonld"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.p
           initial={{ opacity: 0, y: 10 }}

@@ -112,7 +112,7 @@ export default function WaterManagementPage() {
       <section className="relative h-[90vh] flex items-center overflow-hidden pt-48">
         <Image 
           src="/sustanaibility/Optimize waterbg.webp" 
-          alt="Water Management Hero" 
+          alt="Water management and conservation solutions for buildings - Sustainabyte" 
           fill 
           className="object-cover"
           priority

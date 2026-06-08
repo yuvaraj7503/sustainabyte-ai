@@ -19,17 +19,23 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import GreenButton from "@/components/ui/GreenButton";
+import RelatedServices from "@/components/seo/RelatedServices";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 export default function AnalyticsPage() {
   return (
     <div className="bg-[#0D1B3E] min-h-screen text-white overflow-x-hidden">
+      <Breadcrumbs items={[
+        { name: "Home", href: "/" },
+        { name: "Data Analytics", href: "/analytics" },
+      ]} />
       {/* Premium Hero Section */}
       <section className="relative pt-40 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           {/* We can use a placeholder image for the hero or reuse an existing one until we generate a specific one */}
           <Image
             src="/energy/Energy Efficiency and Consulting/energybg.webp"
-            alt="Energy Analytics"
+            alt="Energy analytics platform dashboard with real-time data - Sustainabyte"
             fill
             className="object-cover opacity-80"
             priority
@@ -37,7 +43,18 @@ export default function AnalyticsPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B3E]/90 to-transparent" />
         </div>
 
-       
+        <div className="max-w-7xl mx-auto px-6 relative z-10 flex items-center justify-center min-h-[40vh]">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full text-center"
+          >
+            <h1 className="font-[family-name:var(--font-sora)] text-5xl md:text-8xl font-black bg-gradient-to-r from-[#4DB846] to-[#3DD68C] bg-clip-text text-transparent leading-[1.1]">
+              Data Analytics
+            </h1>
+          </motion.div>
+        </div>
       </section>
 
       {/* Core Capabilities - Cinematic Scrolling Redesign */}
@@ -153,7 +170,7 @@ export default function AnalyticsPage() {
                         fill
                         sizes="(max-width: 768px) 100vw, 420px"
                         className="object-cover object-center group-hover/img:scale-105 transition-transform duration-700"
-                      />
+                       loading="lazy" />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1B3E]/70 to-transparent px-6 py-4">
                         <span className="text-[#4DB846] text-[10px] font-bold tracking-widest uppercase">{feature.subtitle}</span>
                       </div>
@@ -189,6 +206,12 @@ export default function AnalyticsPage() {
           </motion.div>
         </div>
       </section>
+
+      <RelatedServices services={[
+        { title: "AI & Machine Learning", href: "/technology/ai", description: "Predictive intelligence, autonomous optimization, and digital twins for smart energy management." },
+        { title: "Energy Management Solutions", href: "/energy/management-solutions", description: "ISO 50001 implementation, M&V, and digital energy management platforms." },
+        { title: "OptiByte Platform", href: "/technology/optibyte", description: "AI Energy Intelligence Platform for system-level energy insights and optimization." },
+      ]} />
     </div>
   );
 }

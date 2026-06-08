@@ -130,10 +130,10 @@ export default function WhatWeDo() {
       <div className="absolute inset-0">
         <Image
           src="/What We Do all img/bgimg.webp"
-          alt="Background"
+          alt="Smart building energy management overview - Sustainabyte Technologies"
           fill
           className="object-cover opacity-30"
-        />
+         loading="lazy" />
         {/* Dark overlay to ensure text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B3E]/80 via-[#0D1B3E]/95 to-[#0D1B3E]" />
       </div>

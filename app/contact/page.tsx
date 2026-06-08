@@ -172,7 +172,7 @@ export default function ContactPage() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center overflow-hidden">
         <Image
           src="/Contact%20Us/Contact-Us-BG-scaled.webp"
-          alt="Contact Us Background"
+          alt="Sustainabyte office location India - energy consulting contact"
           fill
           className="object-cover"
           priority

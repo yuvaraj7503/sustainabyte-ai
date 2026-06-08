@@ -28,7 +28,7 @@ export default function AnalyticsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/energy/Energy Analytics/Energy Analytics1.webp"
-            alt="Energy Analytics"
+            alt="Energy analytics dashboard with utility and BMS data - Sustainabyte platform"
             fill
             className="object-cover"
             priority
@@ -171,7 +171,7 @@ export default function AnalyticsPage() {
                         fill
                         sizes="(max-width: 768px) 100vw, 420px"
                         className="object-cover object-center group-hover/img:scale-105 transition-transform duration-700"
-                      />
+                       loading="lazy" />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1B3E]/70 to-transparent px-6 py-4">
                         <span className="text-[#4DB846] text-[10px] font-bold tracking-widest uppercase">{feature.subtitle}</span>
                       </div>

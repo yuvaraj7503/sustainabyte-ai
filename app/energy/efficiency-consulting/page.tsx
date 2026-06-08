@@ -3,5 +3,10 @@
 import EnergyPage from "../page";
 
 export default function EfficiencyConsultingPage() {
-  return <EnergyPage />;
+  return (
+    <>
+      <h1 className="sr-only">Energy Efficiency Consulting Services in India</h1>
+      <EnergyPage />
+    </>
+  );
 }

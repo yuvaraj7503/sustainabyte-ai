@@ -123,7 +123,7 @@ export default function FocusAreas() {
                             fill
                             className="object-cover transition-transform duration-500 group-hover:scale-110"
                             sizes="(max-width: 640px) 45vw, 33vw"
-                          />
+                           loading="lazy" />
 
                           {/* Gradient overlay */}
                           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />

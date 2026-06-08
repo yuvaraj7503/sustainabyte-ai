@@ -66,7 +66,7 @@ export default function NetZeroFocus() {
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <Image
           src="/Net Zero Focusbg.webp"
-          alt="Net Zero Focus Background"
+          alt="Net zero carbon emissions monitoring dashboard - Sustainabyte sustainability"
           fill
           className="object-cover opacity-80"
           priority
