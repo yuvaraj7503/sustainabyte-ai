@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import HeroSection from "@/components/home/HeroSection";
 import StatsBar from "@/components/home/StatsBar";
+
+export const metadata: Metadata = {
+  title: "Sustainabyte Technologies | AI-Powered Energy Optimization for Buildings & Industries",
+  description: "Sustainabyte Technologies helps industrial facilities and commercial buildings reduce energy costs and achieve Net Zero using AI-powered monitoring, chiller plant optimization, and verified savings.",
+};
 
 const ProblemSolution = dynamic(() => import("@/components/home/ProblemSolution"));
 const EPICSection = dynamic(() => import("@/components/home/EPICSection"));

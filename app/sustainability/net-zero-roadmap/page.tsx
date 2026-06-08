@@ -126,10 +126,10 @@ export default function NetZeroRoadmapPage() {
             className="max-w-3xl"
           >
          
-            <h5 className="font-[family-name:var(--font-sora)] text-5xl md:text-6xl font-black mb-6 leading-tight">
+            <h1 className="font-[family-name:var(--font-sora)] text-5xl md:text-6xl font-black mb-6 leading-tight">
               NET ZERO <br />
               <span className="bg-gradient-to-r from-[#4DB846] to-[#3DD68C] bg-clip-text text-transparent">ROADMAP</span>
-            </h5>
+            </h1>
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-6">
               Plan smart. Act fast. Achieve carbon neutrality.
             </h2>

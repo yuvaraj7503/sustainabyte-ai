@@ -37,7 +37,18 @@ export default function AnalyticsPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B3E]/90 to-transparent" />
         </div>
 
-       
+        <div className="max-w-7xl mx-auto px-6 relative z-10 flex items-center justify-center min-h-[40vh]">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full text-center"
+          >
+            <h1 className="font-[family-name:var(--font-sora)] text-5xl md:text-8xl font-black bg-gradient-to-r from-[#4DB846] to-[#3DD68C] bg-clip-text text-transparent leading-[1.1]">
+              Data Analytics
+            </h1>
+          </motion.div>
+        </div>
       </section>
 
       {/* Core Capabilities - Cinematic Scrolling Redesign */}

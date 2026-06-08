@@ -29,12 +29,9 @@ export default function EnergyManagementSolutionsPage() {
             transition={{ duration: 0.8 }}
             className="w-full text-center"
           >
-            <h5 className="font-[family-name:var(--font-sora)] text-5xl md:text-8xl font-black bg-gradient-to-r from-[#4DB846] to-[#3DD68C] bg-clip-text text-transparent leading-[1.1]">
-              Energy Management
-            </h5>
-            <h3 className="font-[family-name:var(--font-sora)] text-5xl md:text-8xl font-black bg-gradient-to-r from-[#4DB846] to-[#3DD68C] bg-clip-text text-transparent leading-[1.1]">
-              Solutions
-            </h3>
+            <h1 className="font-[family-name:var(--font-sora)] text-5xl md:text-8xl font-black bg-gradient-to-r from-[#4DB846] to-[#3DD68C] bg-clip-text text-transparent leading-[1.1]">
+              Energy Management Solutions
+            </h1>
           </motion.div>
         </div>
       </section>
